@@ -136,6 +136,7 @@ sdm.video_mode_panel       u:object_r:vendor_default_prop:s0
 sdm.drop_skewed_vsync      u:object_r:vendor_default_prop:s0
 sys.disable_ext_animation  u:object_r:vendor_default_prop:s0
 sys.hwc_disable_hdr        u:object_r:vendor_default_prop:s0
+zeroth.debuglog.logmask    u:object_r:vendor_default_prop:s0
 
 # public_vendor_default_prop
 fastrpc.debug.trace        u:object_r:public_vendor_default_prop:s0
@@ -188,8 +189,8 @@ vendor.debug.prerotation.disable   u:object_r:vendor_display_prop:s0
 vendor.debug.egl.changepixelformat u:object_r:vendor_display_prop:s0
 vendor.debug.egl.swapinterval      u:object_r:vendor_display_prop:s0
 
-# persist_nfc_prop
-persist.nfc. u:object_r:persist_nfc_prop:s0
+# vendor_nfc_prop
+persist.vendor.nfc.                u:object_r:vendor_nfc_prop:s0
 
 # Pixel Logger (Bluetooth)
 vendor.sys.logger.bluetooth        u:object_r:vendor_bluetooth_log_prop:s0
