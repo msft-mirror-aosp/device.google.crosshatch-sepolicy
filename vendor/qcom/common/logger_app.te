@@ -1,12 +1,4 @@
-type logger_app, domain;
-
 userdebug_or_eng(`
-  app_domain(logger_app)
-  net_domain(logger_app)
-
-  allow logger_app app_api_service:service_manager find;
-  allow logger_app surfaceflinger_service:service_manager find;
-
   allow logger_app diag_device:chr_file rw_file_perms;
   allow logger_app qlogd_exec:file rx_file_perms;
 
@@ -25,6 +17,5 @@ userdebug_or_eng(`
   set_prop(logger_app, vendor_bluetooth_log_prop)
   set_prop(logger_app, vendor_tcpdump_log_prop)
   set_prop(logger_app, vendor_wifi_sniffer_prop)
-
-  get_prop(logger_app, vendor_usb_config_prop)
+  set_prop(logger_app, vendor_usb_config_prop)
 ')
